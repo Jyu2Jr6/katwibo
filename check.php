@@ -1,8 +1,8 @@
 <?php
   session_start();
-  require('util/dbFunc.php');
-  require('util/function.php');
-  require('util/const.php');
+  require(__DIR__ . 'util/dbFunc.php');
+  require(__DIR__ . 'util/function.php');
+  require(__DIR__ . 'util/const.php');
 
   // TwitterOAuthライブラリの読み込み
   require_once('vendor/autoload.php');

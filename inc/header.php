@@ -1,5 +1,9 @@
 <?php
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/dbFunc.php');
+  // echo $_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/dbFunc.php' . '<br>';
+  // echo __DIR__ . '/../util/dbFunc.php' . '<br>';
+
+  // require_once($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/dbFunc.php');
+  require_once(__DIR__ . '/../util/dbFunc.php');
   
   $dbh = dbConnect();
 

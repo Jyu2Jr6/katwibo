@@ -1,6 +1,6 @@
 <?php
   // TwitterOAuthライブラリの読み込み
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/katwibo/vendor/autoload.php');
+  require_once(__DIR__ . '/../vendor/autoload.php');
   use Abraham\TwitterOAuth\TwitterOAuth;
 
   //======================================================================

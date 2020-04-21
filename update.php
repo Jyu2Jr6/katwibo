@@ -1,8 +1,8 @@
 <?php
   session_start();
-  require('util/dbFunc.php');
-  require('util/function.php');
-  require('util/const.php');
+  require(__DIR__ . 'util/dbFunc.php');
+  require(__DIR__ . 'util/function.php');
+  require(__DIR__ . 'util/const.php');
   // TwitterOAuthライブラリの読み込み
   require_once('vendor/autoload.php');
   use Abraham\TwitterOAuth\TwitterOAuth;
@@ -154,7 +154,7 @@
 </head>
 <body">
   <!-- ナビゲーションメニュー -->
-  <?php include($_SERVER['DOCUMENT_ROOT']  . '/katwibo/inc/header.php')?>
+  <?php include(__DIR__  . '/inc/header.php')?>
 
   <div class="container mt-4">
     <div class="row justify-content-center">

@@ -1,7 +1,8 @@
 <?php
   session_start();
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/dbFunc.php');
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/function.php');
+
+  require_once(__DIR__ . '/../util/dbFunc.php');
+  require_once(__DIR__ . '/../util/function.php');
 
   // 登録ボタンが押された場合
   if (!empty($_POST)) {
@@ -102,7 +103,7 @@
 </head>
 <body>
 <!-- ナビゲーションバー -->
-<?php include($_SERVER['DOCUMENT_ROOT']  . '/katwibo/inc/header.php')?>
+<?php include(__DIR__  . '/../inc/header.php')?>
 
 <div class="container mt-4">
   <div class="row justify-content-center">

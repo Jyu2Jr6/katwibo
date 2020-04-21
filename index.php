@@ -1,8 +1,8 @@
 <?php
   session_start();
-  require($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/function.php');
-  require($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/dbFunc.php');
-  require($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/const.php');
+  require(__DIR__ . '/util/function.php');
+  require(__DIR__ . '/util/dbFunc.php');
+  require(__DIR__ . '/util/const.php');
   
   // 収支初期設定
   $bofpFlg0 = "checked";
@@ -160,7 +160,7 @@
 </head>
 <body">
   <!-- ナビゲーションメニュー -->
-  <?php include($_SERVER['DOCUMENT_ROOT']  . '/katwibo/inc/header.php')?>
+  <?php include(__DIR__  . '/inc/header.php')?>
 
   <div class="container mt-4">
     <div class="row justify-content-center">

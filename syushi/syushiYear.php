@@ -1,7 +1,7 @@
 <?php
   session_start();
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/dbFunc.php');
-  require_once($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/function.php');
+  require_once(__DIR__ . '/../util/dbFunc.php');
+  require_once(__DIR__ . '/../util/function.php');
 
   // ログインチェック
   $user = loginCheck();
@@ -43,7 +43,7 @@
 </head>
 <body>
 <!-- ナビゲーションバー -->
-<?php include($_SERVER['DOCUMENT_ROOT']  . '/katwibo/inc/header.php')?>
+<?php include(__DIR__ . '/../inc/header.php')?>
 
   <div class="container mt-4">
     <div class="row justify-content-center">

@@ -1,7 +1,7 @@
 <?php
   session_start();
-  require($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/dbFunc.php');
-  require($_SERVER['DOCUMENT_ROOT'] . '/katwibo/util/function.php');
+  require(__DIR__ . '/../util/dbFunc.php');
+  require(__DIR__ . '/../util/function.php');
 
   // index.phpを通過してきていない場合
   if(!isset($_SESSION['join'])) {
@@ -74,7 +74,7 @@
 </head>
 <body>
 <!-- ナビゲーションバー -->
-<?php include($_SERVER['DOCUMENT_ROOT']  . '/katwibo/inc/header.php')?>
+<?php include(__DIR__  . '/../inc/header.php')?>
 
   <div class="container mt-4">
     <div class="row justify-content-center">
